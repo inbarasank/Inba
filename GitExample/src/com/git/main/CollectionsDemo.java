@@ -1,6 +1,7 @@
 package com.git.main;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Iterator;
 
 public class CollectionsDemo {
@@ -13,6 +14,9 @@ public class CollectionsDemo {
 		 
 		
 		ArrayList<String> al = new ArrayList<String>();
+		
+		HashSet<String> hs = new HashSet<String>();
+		
 		al.add("First");
 		
 		al.add("Second");
@@ -21,9 +25,17 @@ public class CollectionsDemo {
 		al.add("Fourth");
 		
 		for (Iterator<String> iterator = al.iterator(); iterator.hasNext();) {
-			String string = (String) iterator.next();
+			String string = iterator.next();
 			
 			System.out.println(string);
+			
+		}
+		
+		hs.addAll(al);
+		System.out.println("");
+		for (Iterator<String> iterator = hs.iterator(); iterator.hasNext();) {
+			String object = (String) iterator.next();
+			System.out.println(object);
 			
 		}
 	}
