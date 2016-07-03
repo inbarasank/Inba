@@ -17,6 +17,7 @@ public class CollectionsDemo {
 		
 		HashSet<String> hs = new HashSet<String>();
 		
+		System.out.println("");
 		al.add("First");
 		
 		al.add("Second");
