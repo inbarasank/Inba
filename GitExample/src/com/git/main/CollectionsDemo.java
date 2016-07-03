@@ -18,6 +18,7 @@ public class CollectionsDemo {
 		al.add("Second");
 		al.add("Third");
 		al.add("Fourth");
+		al.add("Fourth");
 		
 		for (Iterator<String> iterator = al.iterator(); iterator.hasNext();) {
 			String string = (String) iterator.next();
